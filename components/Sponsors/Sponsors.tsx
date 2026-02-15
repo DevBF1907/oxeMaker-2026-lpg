@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SPONSORS } from '../constants';
+import { SPONSORS } from '../../constants';
 
 const Sponsors: React.FC = () => {
   return (

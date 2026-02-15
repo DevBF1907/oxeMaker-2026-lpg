@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GALLERY } from '../constants';
+import { GALLERY } from '../../constants';
 
 const Gallery: React.FC = () => {
   return (

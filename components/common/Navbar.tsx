@@ -13,7 +13,6 @@ const Navbar: React.FC = () => {
           </div>
         </a>
         
-        
         <div className="hidden md:flex space-x-6 font-mono text-[10px] uppercase font-bold text-white/50">
           <a href="#sobre" className="hover:text-oxe-orange transition-colors">01_CORRE</a>
           <a href="#atividades" className="hover:text-oxe-green transition-colors">02_MASSA</a>
