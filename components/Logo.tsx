@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const logoOxe = "/img/logoSemfundo.png";
+const logoOxe = "/logo.png";
 
 function Logo({ 
   className = "w-32 h-32", 
