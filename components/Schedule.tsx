@@ -1,42 +1,41 @@
-
 import React from 'react';
-import { SCHEDULE } from '../constants';
 
-const Schedule: React.FC = () => {
+const Navbar: React.FC = () => {
   return (
-    <section id="programacao" className="py-24 px-6 relative">
-      <div className="container mx-auto">
-        <div className="mb-16">
-          <h2 className="font-logo text-6xl md:text-8xl font-black mb-4 uppercase">
-            O <span className="text-oxe-orange">PLANO</span>
-          </h2>
-          <p className="font-mono text-oxe-sand/60">log_cronograma: v1.0.final</p>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-oxe-dark/80 backdrop-blur-md border-b border-white/5 px-6 py-2">
+      <div className="container mx-auto flex justify-between items-center">
+        
+        {/* LOGO + TEXTO */}
+        <a href="#" className="flex items-center gap-4">
+          
+          {/* IMAGEM */}
+          <img
+            src="/logo.png"
+            alt="Ôxe Maker"
+            className="w-14 h-14 object-contain"
+          />
+
+          <div className="hidden sm:block font-logo text-2xl uppercase tracking-tighter">
+            <span className="text-white">ÔXE</span>
+            <span className="text-oxe-orange">MAKER</span>
+          </div>
+        </a>
+        
+        {/* LINKS */}
+        <div className="hidden md:flex space-x-6 font-mono text-[10px] uppercase font-bold text-white/50">
+          <a href="#sobre" className="hover:text-oxe-orange transition-colors">01_CORRE</a>
+          <a href="#atividades" className="hover:text-oxe-green transition-colors">02_MASSA</a>
+          <a href="#programacao" className="hover:text-oxe-blue transition-colors">03_PLANO</a>
+          <a href="#galeria" className="hover:text-oxe-yellow transition-colors">04_MEMORIA</a>
         </div>
 
-        <div className="max-w-4xl space-y-4">
-          {SCHEDULE.map((item, idx) => (
-            <div 
-              key={idx} 
-              className="flex flex-col md:flex-row gap-6 p-6 border border-white/10 hover:border-oxe-blue hover:bg-white/5 transition-all group"
-            >
-              <div className="md:w-32 flex-shrink-0 font-logo text-4xl text-oxe-blue italic">
-                {item.time}
-              </div>
-              <div className="flex-grow">
-                <div className="flex items-center gap-3 mb-2">
-                   <h4 className="font-logo text-2xl text-white uppercase group-hover:text-oxe-blue transition-colors">{item.activity}</h4>
-                   <span className="font-mono text-[10px] text-oxe-green border border-oxe-green px-2 py-0.5 uppercase">
-                     {item.location}
-                   </span>
-                </div>
-                <p className="font-sans text-sm text-oxe-sand/50 leading-relaxed">{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* BOTÃO */}
+        <button className="maker-button bg-oxe-orange text-white px-5 py-2 font-logo text-xl uppercase rounded-sm shadow-md">
+          Buildar!
+        </button>
       </div>
-    </section>
+    </nav>
   );
 };
 
-export default Schedule;
+export default Navbar;

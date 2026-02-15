@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-oxe-dark/80 backdrop-blur-md border-b border-white/5 px-6 py-2">
       <div className="container mx-auto flex justify-between items-center">
         <a href="#" className="flex items-center gap-4">
-          <Logo className="w-16 h-16" showText={false} />
+          <Logo className="w-40 h-40" showText={false} />
           <div className="hidden sm:block font-logo text-2xl uppercase tracking-tighter">
             <span className="text-white">ÔXE</span><span className="text-oxe-orange">MAKER</span>
           </div>
