@@ -1,14 +1,14 @@
 
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Features from './components/Features';
-import Gallery from './components/Gallery';
-import Schedule from './components/Schedule';
-import Sponsors from './components/Sponsors';
-import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer';
+import Navbar from './components/common/Navbar';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Features from './components/Features/Features';
+import Gallery from './components/Gallery/Gallery';
+import Schedule from './components/Schedule/Schedule';
+import Sponsors from './components/Sponsors/Sponsors';
+import FinalCTA from './components/FinalCTA/FinalCTA';
+import Footer from './components/Footer/Footer';
 
 const App: React.FC = () => {
   return (

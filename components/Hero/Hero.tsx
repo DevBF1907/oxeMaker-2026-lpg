@@ -1,7 +1,7 @@
 
 import React from 'react';
-import Countdown from './Countdown';
-import Logo from './Logo';
+import Countdown from '../common/Countdown';
+import Logo from '../common/Logo';
 
 const Hero: React.FC = () => {
   return (
